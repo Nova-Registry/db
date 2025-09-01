@@ -1,0 +1,40 @@
+{
+    "name": "@nova-registry/db",
+    "version": "0.1.0-dev.1",
+    "description": "The API for managing the database of Nova-Registry.",
+    "license": "BSD-3-Clause",
+    "author": {
+        "name": "Nova Registry",
+        "email": "nr-contact@wettstein.qzz.io",
+        "url": "https://github.com/Nova-Registry"
+    },
+    "maintainers": [
+        {
+            "name": "Talon Wettstein",
+            "url": "https://github.com/Diablo2009"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nova-Registry/db.git"
+    },
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "^24.3.0",
+        "@types/pg": "^8.15.5",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "@nova-registry/types": "^0.1.0-dev.3",
+        "dotenv": "^17.2.1",
+        "pg": "^8.16.3"
+    },
+    "bundleDependencies": [
+        "@nova-registry/types"
+    ],
+    "scripts": {
+        "prepublishOnly": "tsc"
+    }
+}
